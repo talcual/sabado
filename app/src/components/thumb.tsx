@@ -1,30 +1,15 @@
 
 
-function Thumb(){
+function Thumb(props: {title:string, url:string, textx:string}){
     return (
         <>
             <div className="col">
               <div className="card shadow-sm">
-                <svg
-                  aria-label="Placeholder: Thumbnail"
-                  className="bd-placeholder-img card-img-top"
-                  height="225"
-                  preserveAspectRatio="xMidYMid slice"
-                  role="img"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                    Thumbnail
-                  </text>
-                </svg>
+                <h5 className="text-center text-uppercase my-3">{props.title}</h5>
+                <img src={props.url} className="img-fluid"/>
                 <div className="card-body">
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    {props.textx}
                   </p>
                   <div
                     className="d-flex justify-content-between align-items-center"

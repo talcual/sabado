@@ -6,12 +6,12 @@ import Footer from "../../components/footer"
 import Thumb from "../../components/thumb"
 
 const fotos = [
-    {nombre: 'foto 1'},
-    {nombre: 'foto 2'},
-    {nombre: 'foto 3'},
-    {nombre: 'foto 4'},
-    {nombre: 'foto 5'},
-    {nombre: 'foto 6'},
+    {nombre: 'foto 1', url:'https://es.gizmodo.com/app/uploads/2025/05/Diseno-sin-titulo-49-10.jpg', texto: 'gdshgfdghfdhfdghfdghfdghfdghfdghfdhgfdghfdghfdghfd'},
+    {nombre: 'foto 2', url:'https://es.gizmodo.com/app/uploads/2025/05/Diseno-sin-titulo-49-10.jpg', texto: 'rgsetghfdhdfhggfhdfghfdhfdghfdghfdghfghdfhfdghfdgh'},
+    {nombre: 'foto 3', url:'https://es.gizmodo.com/app/uploads/2025/05/Diseno-sin-titulo-49-10.jpg', texto: 'cxbnvvcbnvcbnvcbnvcbnvcbnvcbnvcnvcbnvcbnvcbnbvcnvcb'},
+    {nombre: 'foto 4', url:'https://es.gizmodo.com/app/uploads/2025/05/Diseno-sin-titulo-49-10.jpg', texto: 'uyyurtyurutryutryutryutrurtyurtyurtyutryutryutryutr'},
+    {nombre: 'foto 5', url:'https://www.elpais.com.co/resizer/v2/HRFVXNCIN5EWRMIY3ZMXCM4AKA.jpg?auth=47eff820c052b491319fac6956fb2a5ddfce5c4966e0063a58fc7b1a3ab6f4f7&smart=true&quality=75&width=1280&height=720', texto: 'klhjklhjklhjklhjlhjklhjklhjklhjklhjklhjklhjkljkljlhj'},
+    {nombre: 'foto 6', url:'https://www.elpais.com.co/resizer/v2/HRFVXNCIN5EWRMIY3ZMXCM4AKA.jpg?auth=47eff820c052b491319fac6956fb2a5ddfce5c4966e0063a58fc7b1a3ab6f4f7&smart=true&quality=75&width=1280&height=720', texto: 'qwrqwerqwrwqrqwerqwerqwerqwrqwerqwerqwerqwerqwerwqer'},
 ]
 
 function Home(){
@@ -46,7 +46,7 @@ function Home(){
                                 
                                 {
                                     photos.map((photo:any) => (
-                                        <Thumb key={photo.nombre}/>
+                                        <Thumb title={photo.nombre} url={photo.url} textx={photo.texto}  key={photo.nombre}/>
                                     ))
                                 }
 
